@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@layer base {
+    :root {
+        --purple-color: #D434FE;
+        --primary-color: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+    }
+}
+
+body {
+    font-family: 'Clash Display', sans-serif;
+}
+
+h3 {
+    color: #fff;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.btn {
+    background: var(--primary-color);
+}
+
+.star {
+    animation: star 3s;
+    animation: star 0.5s ease-in infinite;
+}
+
+@keyframes star {
+    0% {opacity: 1;}
+    100% {opacity: 0.5;}
+}
+
+.drop-down {
+    background-color:navajowhite;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
